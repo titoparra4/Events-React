@@ -27,13 +27,15 @@ class App extends Component {
 			});
 	};
 
+	obtenerEventos = async (busqueda) => {};
+
 	render() {
 		return (
 			<div className="App">
 				<Header />
 
 				<div className="uk-container">
-					<Formulario categorias={this.state.categorias} />
+					<Formulario categorias={this.state.categorias} obtenerEventos={this.obtenerEventos} />
 				</div>
 			</div>
 		);

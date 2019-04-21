@@ -21,6 +21,12 @@ const Evento = (props) => {
 					<h3 className="uk-card-title">{props.info.name.text}</h3>
 					<p>{desc}</p>
 				</div>
+
+				<div className="uk-card-footer">
+					<a className="uk-button" href={props.info.url} target="_blank">
+						More information
+					</a>
+				</div>
 			</div>
 		</div>
 	);

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Header from './componentes/Header';
+import Formulario from './componentes/Formulario';
 
 class App extends Component {
 	token = 'FVWKU4EOG57CWT4S73EL';
@@ -30,6 +31,10 @@ class App extends Component {
 		return (
 			<div className="App">
 				<Header />
+
+				<div className="uk-container">
+					<Formulario categorias={this.state.categorias} />
+				</div>
 			</div>
 		);
 	}
